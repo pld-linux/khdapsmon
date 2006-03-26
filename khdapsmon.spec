@@ -54,9 +54,6 @@ rm -rf $RPM_BUILD_ROOT
 %clean
 rm -rf $RPM_BUILD_ROOT
 
-%post	-p /sbin/ldconfig
-%postun	-p /sbin/ldconfig
-
 %files -f %{name}.lang
 %defattr(644,root,root,755)
 %doc ChangeLog NEWS README TODO
