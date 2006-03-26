@@ -1,4 +1,4 @@
-Summary:	monitor primarily for the Hard Drive Active Protection System (HDAPS
+Summary:	monitor primarily for the Hard Drive Active Protection System (HDAPS)
 Name:		khdapsmon
 Version:	0.1.2
 Release:	1
