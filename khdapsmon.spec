@@ -1,4 +1,5 @@
-Summary:	monitor primarily for the Hard Drive Active Protection System (HDAPS)
+Summary:	Monitor primarily for the Hard Drive Active Protection System (HDAPS)
+Summary(pl):	Monitorowanie systemu aktywnej ochrony dysku twardego (HDAPS)
 Name:		khdapsmon
 Version:	0.1.2
 Release:	1
@@ -11,7 +12,10 @@ BuildRequires:	autoconf >= 2.52
 BuildRequires:	automake >= 1.6.1
 BuildRequires:	kdelibs-devel
 BuildRequires:	rpmbuild(macros) >= 1.129
+# needed for actual protection, but khdapsmon doesn't use hpadsd in any way
 Requires:	hdapsd
+# relies on kernel hdaps driver, which depends on CONFIG_X86
+ExclusiveArch:	%{ix86} %{x8664}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -19,14 +23,28 @@ khdapsmon is a monitor primarily for the Hard Drive Active Protection
 System (HDAPS) found in IBM ThinkPads. It's primary interface is a
 system tray icon that indicates whether the queue is frozen or not on
 the selected hard disk device. This is similar to the tray icon found
-on the pre-installed OS on ThinkPads. It should work with other
+on the pre-installed OS on ThinkPads. It could work with other
 systems similar to the ThinkPad's, such as those found in Apple
-PowerBooks but this has not been tested and is probably dependent upon
-kernel code that is not yet available. A status dialog also prints out
-useful information like accelerometer status and keyboard/mouse
-activity status. It also allows for the selection of the monitored
-device if you have more than one hard disk that supports queue
-freezing.
+PowerBooks but this has not been tested and is dependent upon some
+code that is not yet available. A status dialog also prints out useful
+information like accelerometer status and keyboard/mouse activity
+status. It also allows for the selection of the monitored device if
+you have more than one hard disk that supports queue freezing.
+
+%description -l pl
+khdapsmon to monitor przeznaczony g³ównie dla systemu HDAPS (Hard
+Drive Active Protection System - systemu aktywnej ochrony dysku
+twadego), jaki mo¿na spotkaæ w notebookach IBM ThinkPad. G³ówny
+interfejs to ikona zasobnika systemowego okre¶laj±ca, czy kolejka
+operacji jest zamro¿ona dla wybranego dysku twardego. Jest podobna do
+ikony paska w systemie operacyjnym preinstalowanym na ThinkPadach.
+Mog³oby to dzia³aæ z systemami podobnymi do tego w ThinkPadzie, jak
+na przyk³ad tym obecnym w Apple PowerBookach, ale nie by³o to
+testowane i wymaga to kodu, który nie zosta³ jeszcze napisany. Okno
+dialogowe stanu wypisuje ró¿ne przydatne informacje, takie jak stan
+czujnika przyspieszenia oraz aktywno¶ci klawiatury i myszy. Pozwala
+tak¿e na wybór monitorowanego urz±dzenia, je¶li dostêpny jest wiêcej
+ni¿ jeden dysk twardy obs³uguj±cy zamra¿anie kolejki.
 
 %prep
 %setup -q
