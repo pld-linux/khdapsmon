@@ -1,5 +1,5 @@
 Summary:	Monitor primarily for the Hard Drive Active Protection System (HDAPS)
-Summary(pl):	Monitorowanie systemu aktywnej ochrony dysku twardego (HDAPS)
+Summary(pl.UTF-8):   Monitorowanie systemu aktywnej ochrony dysku twardego (HDAPS)
 Name:		khdapsmon
 Version:	0.1.2
 Release:	1
@@ -31,20 +31,20 @@ information like accelerometer status and keyboard/mouse activity
 status. It also allows for the selection of the monitored device if
 you have more than one hard disk that supports queue freezing.
 
-%description -l pl
-khdapsmon to monitor przeznaczony g≥Ûwnie dla systemu HDAPS (Hard
+%description -l pl.UTF-8
+khdapsmon to monitor przeznaczony g≈Ç√≥wnie dla systemu HDAPS (Hard
 Drive Active Protection System - systemu aktywnej ochrony dysku
-twadego), jaki moøna spotkaÊ w notebookach IBM ThinkPad. G≥Ûwny
-interfejs to ikona zasobnika systemowego okre∂laj±ca, czy kolejka
-operacji jest zamroøona dla wybranego dysku twardego. Jest podobna do
+twadego), jaki mo≈ºna spotkaƒá w notebookach IBM ThinkPad. G≈Ç√≥wny
+interfejs to ikona zasobnika systemowego okre≈õlajƒÖca, czy kolejka
+operacji jest zamro≈ºona dla wybranego dysku twardego. Jest podobna do
 ikony paska w systemie operacyjnym preinstalowanym na ThinkPadach.
-Mog≥oby to dzia≥aÊ z systemami podobnymi do tego w ThinkPadzie, jak
-na przyk≥ad tym obecnym w Apple PowerBookach, ale nie by≥o to
-testowane i wymaga to kodu, ktÛry nie zosta≥ jeszcze napisany. Okno
-dialogowe stanu wypisuje rÛøne przydatne informacje, takie jak stan
-czujnika przyspieszenia oraz aktywno∂ci klawiatury i myszy. Pozwala
-takøe na wybÛr monitorowanego urz±dzenia, je∂li dostÍpny jest wiÍcej
-niø jeden dysk twardy obs≥uguj±cy zamraøanie kolejki.
+Mog≈Çoby to dzia≈Çaƒá z systemami podobnymi do tego w ThinkPadzie, jak
+na przyk≈Çad tym obecnym w Apple PowerBookach, ale nie by≈Ço to
+testowane i wymaga to kodu, kt√≥ry nie zosta≈Ç jeszcze napisany. Okno
+dialogowe stanu wypisuje r√≥≈ºne przydatne informacje, takie jak stan
+czujnika przyspieszenia oraz aktywno≈õci klawiatury i myszy. Pozwala
+tak≈ºe na wyb√≥r monitorowanego urzƒÖdzenia, je≈õli dostƒôpny jest wiƒôcej
+ni≈º jeden dysk twardy obs≈ÇugujƒÖcy zamra≈ºanie kolejki.
 
 %prep
 %setup -q
