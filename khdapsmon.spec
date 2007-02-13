@@ -1,5 +1,5 @@
 Summary:	Monitor primarily for the Hard Drive Active Protection System (HDAPS)
-Summary(pl.UTF-8):   Monitorowanie systemu aktywnej ochrony dysku twardego (HDAPS)
+Summary(pl.UTF-8):	Monitorowanie systemu aktywnej ochrony dysku twardego (HDAPS)
 Name:		khdapsmon
 Version:	0.1.2
 Release:	1
